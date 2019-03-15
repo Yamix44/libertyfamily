@@ -9,14 +9,15 @@ require_once 'config.php';
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
+// Clear de tous les membres
 $sql = "DELETE FROM membres";
-if ($conn->query($sql) === TRUE) {
- $compteurSQL++;
-} else {
- $compteurSQL++;
-}
+if ($conn->query($sql) === TRUE)
+    echo "Clean OK";
+else 
+ echo "Clean error";
 
-$url_clan = $base_url .'/clans/'.urlencode($clantag);
+$url_clan = $base_u
+rl .'/clans/'.urlencode($clantag);
 
 $context = stream_context_create(['http' => ['header' => 'Authorization: Bearer '.$token]]);
 $json = file_get_contents($url_clan, false, $context);
