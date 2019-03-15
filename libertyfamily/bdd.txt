@@ -1,0 +1,62 @@
+-- phpMyAdmin SQL Dump
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
+--
+-- Client :  127.0.0.1
+-- Généré le :  Ven 15 Mars 2019 à 13:01
+-- Version du serveur :  5.7.14
+-- Version de PHP :  7.0.10
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
+
+--
+-- Base de données :  `libertyz`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `membres`
+--
+
+CREATE TABLE `membres` (
+  `tag` varchar(11) NOT NULL,
+  `name` varchar(35) NOT NULL,
+  `expLevel` varchar(6) NOT NULL,
+  `trophies` varchar(6) NOT NULL,
+  `warStars` varchar(6) NOT NULL,
+  `th` varchar(6) NOT NULL,
+  `clan` varchar(15) NOT NULL,
+  `king` varchar(3) NOT NULL,
+  `queen` varchar(3) NOT NULL,
+  `warden` varchar(3) NOT NULL,
+  `archer` varchar(3) NOT NULL,
+  `balloon` varchar(3) NOT NULL,
+  `barbarian` varchar(3) NOT NULL,
+  `bowler` varchar(3) NOT NULL,
+  `dragon` varchar(3) NOT NULL,
+  `giant` varchar(3) NOT NULL,
+  `goblin` varchar(3) NOT NULL,
+  `golem` varchar(3) NOT NULL,
+  `healer` varchar(3) NOT NULL,
+  `hogrider` varchar(3) NOT NULL,
+  `lavahound` varchar(3) NOT NULL,
+  `miner` varchar(3) NOT NULL,
+  `minion` varchar(3) NOT NULL,
+  `pekka` varchar(3) NOT NULL,
+  `valkyrie` varchar(3) NOT NULL,
+  `wallbreaker` varchar(3) NOT NULL,
+  `witch` varchar(3) NOT NULL,
+  `wizard` varchar(3) NOT NULL
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
