@@ -41,7 +41,7 @@ $result = array(
     'players' => $playerData
 );
 
-file_put_contents('../data/clan-info.json', json_encode($result));
+//file_put_contents('../data/clan-info.json', json_encode($result));
 
 $url_clan = $base_url .'/clans/'.urlencode($clantag);
 
@@ -297,7 +297,7 @@ $result = array(
     'players' => $playerData
 );
 
-file_put_contents('../data/clan-info.json', json_encode($result));
+//file_put_contents('../data/clan-info.json', json_encode($result));
 
 $url_clan = $base_url .'/v1/clans/'.urlencode($clantag);
 
