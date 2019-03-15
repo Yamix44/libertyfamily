@@ -3,7 +3,6 @@
 $base_url = "https://api.clashofclans.com/v1";
 
 
-set_time_limit(4500);
 $compteurSQL = 0;
 require_once 'config.php';
 
@@ -16,11 +15,6 @@ if ($conn->query($sql) === TRUE) {
 } else {
  $compteurSQL++;
 }
-
-
-
-
-
 
 $url_clan = $base_url .'/clans/'.urlencode($clantag);
 
@@ -218,9 +212,6 @@ foreach ($clanData['memberList'] as $member) {
 		$i++;
     }
 	
-	
-
-	
 	$sql = "INSERT INTO membres VALUES('".$tag."', '".$playername."', '".$expLevel."', '".$trophies."', '".$warStars."', '".$townHallLevel."', 'LibertyZWar', '".$king."','".$queen."','".$warden."','".$archer."','".$balloon."','".$barbarian."','".$bowler."','".$dragon."','".$giant."','".$goblin."','".$golem."','".$healer."','".$hogrider."','".$lavahound."','".$miner."','".$minion."','".$pekka."', '".$valkyrie."','".$wallbreaker."','".$witch."','".$wizard."')";
 			        if ($conn->query($sql) === TRUE) 
         {
@@ -235,15 +226,3 @@ foreach ($clanData['memberList'] as $member) {
 $conn->close();
 
 echo 'sql request :'.$compteurSQL;
-
-
-
-
-
-
-
-
-
-
-
-
